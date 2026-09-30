@@ -1,0 +1,262 @@
+{
+  "generatedAt": "2026-09-23T06:26:12.988Z",
+  "national": {
+    "metro": {
+      "cbsa": "US",
+      "name": "United States (national average)",
+      "state": null,
+      "wageHourly": {
+        "value": 28.40047925715141,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS (393 metros, employment-weighted average computed by this site; not a national estimate published by BLS, whose MSA_M/BOS_M files contain no national summary row)",
+          "ref": "SOC 47-2051/47-2061/47-1011",
+          "asOf": "2025-05",
+          "geo": "national",
+          "note": "SOC 47-2051 covers 336 of 393 metros directly; SOC 47-2061 substituted in 56 metros and SOC 47-1011 in 1"
+        }
+      },
+      "materialRegion": "US",
+      "wageP25": {
+        "value": 22.90995656732064,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS (393 metros, employment-weighted average computed by this site)",
+          "ref": "P25",
+          "asOf": "2025-05",
+          "geo": "national"
+        }
+      },
+      "wageP75": {
+        "value": 32.68218511307474,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS (393 metros, employment-weighted average computed by this site)",
+          "ref": "P75",
+          "asOf": "2025-05",
+          "geo": "national"
+        }
+      }
+    },
+    "laborBurden": {
+      "value": 1.438,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS ECEC, construction (private industry, NAICS 23)",
+        "ref": "Total compensation CMU2012300000000D ÷ wages and salaries CMU2022300000000D",
+        "asOf": "2026-Q2",
+        "geo": "national",
+        "note": "$51.96/h ÷ $36.13/h = 1.438. Total compensation includes paid leave, supplemental pay, employee insurance, retirement and legally required benefits; it excludes the contractor's own business insurance (general liability, commercial auto, etc.), a definitional gap disclosed in the methodology."
+      }
+    },
+    "quoteMultiplier": {
+      "value": 1.995,
+      "prov": {
+        "level": "calibrated",
+        "source": "Derived from the U.S. Census Bureau 2022 Economic Census, NAICS 238110 (poured concrete foundation and structure contractors), ÷ LABOR_BURDEN",
+        "ref": "(RCPTOT 78,743,872 − CSTMPRT 27,191,628) ÷ PAYANN 17,968,785 = 2.869 (thousand USD); 2.869 ÷ 1.438 = 1.995",
+        "asOf": "2022(Census EC2223BASIC)/2026-Q2(ECEC, used for the split)",
+        "geo": "national",
+        "note": "The end-to-end wage-to-price multiplier 2.869 is split into laborBurden (1.438) × quoteMultiplier (1.995). Higher than what public contractor hourly billing rates divided by OEWS wages suggest (NY 1.4-2.8x, LA 1.55-2.59x, Chicago 1.28-1.66x): same direction, but above the top of the observed range."
+      }
+    },
+    "materialPerCuYd": {
+      "value": 132.33152510121843,
+      "prov": {
+        "level": "sourced",
+        "source": "Census EC2200NAPCSINDPRD + BLS PPI PCU327320327320",
+        "ref": "PCU327320327320",
+        "asOf": "2026-08",
+        "geo": "national",
+        "note": "Census 2022 $110.02/CY × national PPI increase of 20.3% (2022 annual average → 2026 annual average)"
+      }
+    },
+    "regionFactor": {
+      "value": 1,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI national index (relative to itself, always 1; the base for the four regional factors)",
+        "ref": "PCU327320327320",
+        "asOf": "2026-08",
+        "geo": "national",
+        "note": "National increase 20.3% (2022 annual average → 2026 annual average), i.e. the denominator of the four regional factors"
+      }
+    },
+    "dispersion": {
+      "value": 0.28,
+      "prov": {
+        "level": "calibrated",
+        "source": "Steuben County, NY public procurement record PW-26-019-B",
+        "ref": "Three same-county, same-day, same-strength quotes: $173 / $200 / $285",
+        "asOf": "2026-02",
+        "geo": "national",
+        "note": "(285−173)÷(2×200) = 0.28 (half-width ÷ central estimate, with the median of the three quotes as the center). One jurisdiction and three quotes: the only public evidence available for quote dispersion (as opposed to wage dispersion), so the sample is thin and confidence is limited."
+      }
+    }
+  },
+  "metros": [
+    {
+      "cbsa": "26420",
+      "name": "Houston-Pasadena-The Woodlands, TX",
+      "state": "TX",
+      "wageHourly": {
+        "value": 23.72,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "materialRegion": "S",
+      "wageP25": {
+        "value": 18.65,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P25",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "wageP75": {
+        "value": 26.83,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P75",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      }
+    },
+    {
+      "cbsa": "42660",
+      "name": "Seattle-Tacoma-Bellevue, WA",
+      "state": "WA",
+      "wageHourly": {
+        "value": 42.25,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "materialRegion": "W",
+      "wageP25": {
+        "value": 29.14,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P25",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "wageP75": {
+        "value": 52.52,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P75",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      }
+    },
+    {
+      "cbsa": "18140",
+      "name": "Columbus, OH",
+      "state": "OH",
+      "wageHourly": {
+        "value": 31.75,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "materialRegion": "MW",
+      "wageP25": {
+        "value": 24.42,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P25",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      },
+      "wageP75": {
+        "value": 37.19,
+        "prov": {
+          "level": "sourced",
+          "source": "BLS OEWS",
+          "ref": "SOC 47-2051 P75",
+          "asOf": "2025-05",
+          "geo": "metro"
+        }
+      }
+    }
+  ],
+  "regionFactors": {
+    "US": {
+      "value": 1,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI national index (relative to itself, always 1; the base for the four regional factors)",
+        "ref": "PCU327320327320",
+        "asOf": "2026-08",
+        "geo": "national",
+        "note": "National increase 20.3% (2022 annual average → 2026 annual average), i.e. the denominator of the four regional factors"
+      }
+    },
+    "NE": {
+      "value": 1.0209793865189498,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI regional index vs national index (ratio of growth ratios, not a raw ratio of levels)",
+        "ref": "PCU327320327320A",
+        "asOf": "2026-08",
+        "geo": "region",
+        "note": "NE region PPI index unchanged for 6 consecutive months (2026-03..2026-08); material price growth in this region may lag the market. The factor still uses the index as-is: it is the only government material-price signal for the region, and refusing it would degrade the region to the national price."
+      }
+    },
+    "MW": {
+      "value": 1.0762581423074444,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI regional index vs national index (ratio of growth ratios, not a raw ratio of levels)",
+        "ref": "PCU327320327320B",
+        "asOf": "2026-08",
+        "geo": "region"
+      }
+    },
+    "S": {
+      "value": 0.9850699278424898,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI regional index vs national index (ratio of growth ratios, not a raw ratio of levels)",
+        "ref": "PCU327320327320C",
+        "asOf": "2026-08",
+        "geo": "region"
+      }
+    },
+    "W": {
+      "value": 0.9572572106563335,
+      "prov": {
+        "level": "sourced",
+        "source": "BLS PPI regional index vs national index (ratio of growth ratios, not a raw ratio of levels)",
+        "ref": "PCU327320327320D",
+        "asOf": "2026-08",
+        "geo": "region",
+        "note": "W region PPI index unchanged for 5 consecutive months (2026-04..2026-08); material price growth in this region may lag the market. The factor still uses the index as-is: it is the only government material-price signal for the region, and refusing it would degrade the region to the national price."
+      }
+    }
+  }
+}

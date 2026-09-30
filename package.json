@@ -1,0 +1,16 @@
+{
+  "name": "concrete-cost-model",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Location-aware residential concrete cost model: fixed mobilization plus marginal rate, with per-parameter provenance.",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}
