@@ -1,6 +1,6 @@
 # concrete-cost-model
 
-The cost model behind [concretecostcalc.com](https://concretecostcalc.com): a small, pure TypeScript library that estimates residential concrete work (slab, driveway, patio, ready-mix volume, block wall, rebar) as a **price range** that changes with location, where every parameter carries its source and date. The full method is described at [concretecostcalc.com/methodology](https://concretecostcalc.com/methodology).
+The cost model behind the [Concrete Cost Calculator](https://concretecostcalc.com) at concretecostcalc.com: a small, pure TypeScript library that estimates residential concrete work (slab, driveway, patio, ready-mix volume, block wall, rebar) as a **price range** that changes with location, where every parameter carries its source and date. The full method is described at [concretecostcalc.com/methodology](https://concretecostcalc.com/methodology).
 
 - No I/O, no globals, no runtime dependencies: `estimate(input, rateCard, jobParams)` is a synchronous pure function.
 - Every price is a `low / point / high` range, never a single number.
